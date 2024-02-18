@@ -1,6 +1,6 @@
 {
     "name": "BetterSingletons.Editor",
-    "rootNamespace": "Better.Singletons",
+    "rootNamespace": "Better.Singletons.EditorAddons",
     "references": [
         "GUID:af7fffdf1d83bc842b0f6e3a01efda16"
     ],
