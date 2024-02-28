@@ -49,13 +49,13 @@ namespace Better.Singletons.Runtime
             var typeName = typeof(T).Name;
             if (assets.IsNullOrEmpty())
             {
-                DebugUtility.LogException<InvalidOperationException>($"[{typeName}] {nameof(FindScriptableObject)}: no asset found");
+                DebugUtility.LogException<InvalidOperationException>("No asset found");
                 return null;
             }
 
             if (assets.Length > 1)
             {
-                Debug.LogWarning($"[{typeName}] {nameof(FindScriptableObject)}: more than one asset found");
+                Debug.LogWarning("More than one asset found");
             }
 
             return assets[0];

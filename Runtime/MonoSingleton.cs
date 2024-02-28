@@ -20,7 +20,6 @@ namespace Better.Singletons.Runtime
 
         private static void ValidateInstance()
         {
-            var typeName = typeof(T).Name;
             if (_instance != null)
             {
                 return;
@@ -30,14 +29,14 @@ namespace Better.Singletons.Runtime
 
             if (objects.IsNullOrEmpty())
             {
-                throw new InvalidOperationException($"[{typeName}] {nameof(ValidateInstance)}: no instance found");
+                throw new InvalidOperationException("No instance found");
             }
 
             _instance = objects[0];
 
             if (objects.Length > 1)
             {
-                Debug.LogWarning($"[{typeName}] {nameof(ValidateInstance)}: more than one instance found. Destroying other instances");
+                Debug.LogWarning("More than one instance found. Destroying other instances");
 
                 var others = new List<T>(objects);
                 others.Remove(_instance);
