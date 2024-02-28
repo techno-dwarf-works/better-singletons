@@ -13,16 +13,11 @@ namespace Better.Singletons.Runtime
             {
                 if (_instance == null)
                 {
-                    LoadOrCreate();
+                    _instance = ScriptableSingletonUtility.LoadOrCreate<T>();
                 }
 
                 return _instance;
             }
-        }
-
-        public static void LoadOrCreate()
-        {
-            _instance = ScriptableSingletonUtility.LoadOrCreate<T>();
         }
     }
 }

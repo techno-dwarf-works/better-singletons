@@ -7,9 +7,9 @@ using UnityEngine;
 
 namespace Better.Singletons.Runtime
 {
-    public static class ScriptableSingletonUtility
+    internal static class ScriptableSingletonUtility
     {
-        public static T LoadOrCreate<T>() where T : ScriptableObject
+        public static T LoadOrCreate<T>() where T : ScriptableSingletonObject<T>
         {
             var type = typeof(T);
             var name = type.Name;
@@ -43,7 +43,7 @@ namespace Better.Singletons.Runtime
 
 #if UNITY_EDITOR
 
-        public static T FindScriptableObject<T>() where T : ScriptableObject
+        public static T FindScriptableObject<T>() where T : ScriptableSingletonAsset<T>
         {
             var assets = AssetDatabaseUtility.FindAssetsOfType<T>();
             var typeName = typeof(T).Name;
