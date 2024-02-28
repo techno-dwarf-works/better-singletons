@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Better.Extensions.Runtime;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace Better.Singletons.Runtime
 {
