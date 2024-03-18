@@ -1,11 +1,11 @@
 {
   "name": "com.tdw.better.singletons",
   "displayName": "Better Singletons",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "unity": "2021.3",
   "description": " ",
   "dependencies": {
-    "com.uurha.betterextensions": "1.5.2",
+    "com.uurha.betterextensions": "1.5.98",
     "com.tdw.better.internal.core": "0.0.2"
   },
   "author": {
