@@ -1,4 +1,4 @@
-using System.IO;
+using Better.Singletons.Runtime.Utility;
 using UnityEngine;
 
 namespace Better.Singletons.Runtime

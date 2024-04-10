@@ -3,7 +3,6 @@
     "rootNamespace": "Better.Singletons.EditorAddons",
     "references": [
         "GUID:af7fffdf1d83bc842b0f6e3a01efda16",
-        "GUID:28da8d3b12e3efa47928e0c9070f853d",
         "GUID:01df13aca8d01e24a911bcc3e8277031"
     ],
     "includePlatforms": [
