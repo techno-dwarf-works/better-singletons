@@ -1,11 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using Better.Extensions.Runtime;
+using Better.Commons.Runtime.Extensions;
+using Better.Commons.Runtime.Utility;
 using Better.Singletons.Runtime.Attributes;
 using UnityEngine;
 
-namespace Better.Singletons.Runtime
+namespace Better.Singletons.Runtime.Utility
 {
     internal static class ScriptableSingletonUtility
     {
