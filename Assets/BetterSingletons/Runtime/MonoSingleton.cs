@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Better.Extensions.Runtime;
+using Better.Commons.Runtime.Extensions;
 using UnityEngine;
 
 namespace Better.Singletons.Runtime
